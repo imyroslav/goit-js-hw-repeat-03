@@ -4,10 +4,10 @@ function filterArray(numbers, value) {
 
     const resultArray = [];
      
-    for (let i = 0; i < numbers.length; i += 1) {
-        if (numbers[i] > value) {
-           resultArray.push(numbers[i])
-       }
+    for (const number of numbers) {
+        if (number > value) {
+            resultArray.push(number)
+        }
     }
     return resultArray
 }
